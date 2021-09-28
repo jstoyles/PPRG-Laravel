@@ -1,0 +1,105 @@
+body{
+	font-family: Arial;
+}
+
+section{
+	border:1px solid #ccc;
+	border-radius:8px;
+	padding:10px;
+	margin:10px;
+	font-size:14pt;
+	font-weight:normal;
+	box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2);
+}
+section p{
+	font-size:10pt;
+	padding:5px 10px;
+	margin:10px 0;
+}
+details{
+	font-size:10pt;
+	font-weight:normal;
+	padding:10px 20px;
+}
+
+.repo-link{ color:#09f; font-weight:bold; }
+
+ul.reset-repos {
+	list-style: none;
+	display: block;
+}
+ul.reset-repos li{
+	color: #09f;
+	cursor: pointer;
+	font-weight: bold;
+	text-align: right;
+	margin:10px 10px 0 0;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 14pt;
+}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #09f;
+  text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+  color: #06f;
+  text-decoration: underline;
+}
+
+
+
+
+/*CSS Loader*/
+.loader {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin-left:calc(50vw - 25px);
+}
+.loader div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin: 8px;
+  border: 8px solid #ccc;
+  border-radius: 50%;
+  animation: loader 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #ccc transparent transparent transparent;
+}
+.loader div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.loader div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.loader div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
