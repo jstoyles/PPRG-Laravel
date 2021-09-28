@@ -11,7 +11,7 @@ I used the composer option...
 https://laravel.com/docs/8.x/installation#installation-via-composer
 
 Once you have Laravel up and running just copy the files in this repo
-to their respective locations in the Laravel file structure
+to their respective locations in the Laravel file structure in your instance of Laravel
 ```
 
 ## Requirements
