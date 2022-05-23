@@ -41,4 +41,4 @@ To reset the data in the database table you can simply call the
 All views for this app are in the /resources/views folder
 
 ## Considerations
-The endpoint to handle resting of the database table is in no way protected against something like a DDoS attack. Under normal circumstances I would prevent this endpoint from being reached by the outside world, but it seemed like overkill for the needs of this example project.
+The endpoint to handle resetting of the database table is in no way protected against something like a DDoS attack. Under normal circumstances I would prevent this endpoint from being reached by the outside world, but it seemed like overkill for the needs of this example project.
